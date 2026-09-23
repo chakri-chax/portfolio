@@ -1,0 +1,108 @@
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 0 0;
+}
+.about-me-parent {
+  max-width: 1000px;
+  width: 70%;
+}
+.about-me-card {
+  display: flex;
+  width: 100%;
+  box-shadow: 0 0px 20px -2px #1f2235;
+  margin: 30px 0;
+  align-items: center;
+}
+.about-me-profile {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.projectImg {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
+  padding: 20px;
+}
+.projectImg:hover {
+  transform: scale(1.07);
+  transition: 1.5s ease-out;
+}
+.projectVideo {
+  width: calc(100% - 40px);
+  margin: 20px;
+  border-radius: 8px;
+}
+.about-me-details {
+  width: 48%;
+  text-align: justify;
+  padding: 30px;
+}
+.about-me-description {
+  font-size: 12px;
+}
+.about-me-highlights {
+  margin: 15px 0;
+}
+.highlight-heading {
+  font-family: "Poppins Bold";
+  font-size: 14px;
+  margin: 0 0 5px 0;
+}
+.highlight {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  font-size: 12px;
+}
+.highlight-blob {
+  height: 12px;
+  width: 12px;
+  margin: 0 10px 0 0;
+  background-color: #ff5823;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.about-me-options .highlighted-btn {
+  margin: 0 0 0 30px;
+}
+
+/*IPAD PRO RESPONSIVENESS*/
+@media only screen and (max-width: 1110px) {
+  .about-me-parent {
+    width: 88%;
+  }
+}
+@media only screen and (max-width: 898px) {
+  .about-me-card {
+    flex-wrap: wrap;
+  }
+  .about-me-profile {
+    display: none;
+  }
+  .about-me-profile.project-video-wrap {
+    display: flex;
+    width: 100%;
+  }
+  .about-me-details {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 466px) {
+  .about-me-options {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-me-options .highlighted-btn {
+    margin: 24px 0 0 0 !important;
+  }
+  .about-me-options button {
+    width: 100%;
+  }
+}
